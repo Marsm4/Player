@@ -13,6 +13,12 @@
 			<Button Name="PauseButton" Content="Pause" Click="PauseButton_Click" Margin="10"/>
 			<Button Name="NextButton" Content="Next" Click="NextButton_Click" Margin="10"/>
 			<TextBlock Name="CurrentSongText" Margin="10"/>
+			<Slider Name="PositionSlider" Margin="10" Minimum="0" Maximum="100" ValueChanged="PositionSlider_ValueChanged"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Name="CurrentTimeText" Margin="10"/>
+				<TextBlock Text="/" Margin="10"/>
+				<TextBlock Name="TotalTimeText" Margin="10"/>
+			</StackPanel>
 		</StackPanel>
 	</Grid>
 </Window>
